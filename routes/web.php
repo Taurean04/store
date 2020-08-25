@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-require 'admin.php';
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,6 @@ require 'admin.php';
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+require 'admin.php';
